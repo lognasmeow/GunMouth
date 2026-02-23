@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bu5p566xbsfn3"]
+
+[ext_resource type="PackedScene" uid="uid://cr1n3r0iqyoik" path="res://Assets/Buildings/ApartmentBuilding/Building.fbx" id="1_j42ba"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j42ba"]
+points = PackedVector3Array(-0.055306807, -0.005, -0.062617585, -0.055306807, -0.005, 0.016284205, -0.055306807, 0.13404843, -0.062617585, 0.03381268, -0.005, -0.062617585, 0.03381268, -0.005, 0.016284205, -0.055306807, 0.13404843, 0.016284205, 0.03381268, 0.13404843, -0.062617585, 0.03381268, 0.13404843, 0.016284205)
+
+[node name="Apartment" unique_id=1015056731 instance=ExtResource("1_j42ba")]
+
+[node name="pCube2" parent="." index="0" unique_id=1060220756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0004552137, 0.0050545414, -0.0015478041)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pCube2" index="0" unique_id=1034999405]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pCube2/StaticBody3D" index="0" unique_id=121609928]
+shape = SubResource("ConvexPolygonShape3D_j42ba")
