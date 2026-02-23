@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bugfo5lvdpr0i"
-path.s3tc="res://.godot/imported/PSX BUILDING SET 1_0.png-1e8a443d8207f7c538662af37f637395.s3tc.ctex"
+uid="uid://dryidnfth58c"
+path.s3tc="res://.godot/imported/PSX BUILDING SET 1_1.png-2b3d81e361351649cd74a4b49c622f60.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "84992db0dc34e1a194756670a17eb334"
+"md5": "eefc7ee65f86f5cb58ea38a6133cb630"
 }
 
 [deps]
 
-source_file="res://Assets/Buildings/PsxBuildingSet/PSX BUILDING SET 1_0.png"
-dest_files=["res://.godot/imported/PSX BUILDING SET 1_0.png-1e8a443d8207f7c538662af37f637395.s3tc.ctex"]
+source_file="res://Assets/Buildings/SkyScraper/PSX BUILDING SET 1_1.png"
+dest_files=["res://.godot/imported/PSX BUILDING SET 1_1.png-2b3d81e361351649cd74a4b49c622f60.s3tc.ctex"]
 
 [params]
 

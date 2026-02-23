@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bcm556pomppyk"]
+
+[ext_resource type="PackedScene" uid="uid://dhlb8vl4ckmb1" path="res://Assets/Buildings/BigBuilding/PSX BUILDING SET 1.fbx" id="1_i43em"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_i43em"]
+points = PackedVector3Array(-0.13701141, -0.005, -0.19450924, -0.13701141, -0.005, 1.0702115, -0.13701141, 1.8133383, -0.19450924, 1.3506389, -0.005, -0.19450924, 1.3506389, -0.005, 1.0702115, -0.13701141, 1.8133383, 1.0702115, 1.3506389, 1.8133383, -0.19450924, 1.3506389, 1.8133383, 1.0702115)
+
+[node name="PSX BUILDING SET 1" unique_id=585539342 instance=ExtResource("1_i43em")]
+
+[node name="pCube4" parent="." index="0" unique_id=1783455246]
+transform = Transform3D(1.7524887, 0, 0, 0, 1.6906912, 0, 0, 0, 2.1883132, -1.0000706, 0.0052368133, -1.0262733)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pCube4" index="0" unique_id=1345084620]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pCube4/StaticBody3D" index="0" unique_id=1014113889]
+shape = SubResource("ConvexPolygonShape3D_i43em")

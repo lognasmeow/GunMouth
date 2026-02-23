@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dde1dq7mppiac"]
+
+[ext_resource type="PackedScene" uid="uid://ba36ep7hbo7cr" path="res://Assets/Buildings/SkyScraper/PSX BUILDING SET 1.fbx" id="1_xiep8"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xiep8"]
+points = PackedVector3Array(0.23268878, 1.8132, 0.17786041, -0.13701141, 1.8132, 0.17786041, 0.23268878, -0.005, 0.17786041, 0.23268878, 1.8132, -0.19450921, 0.16497377, 2.0184133, 0.11954096, -0.069296375, 2.0184133, 0.11954096, -0.13701141, 1.8132, -0.19450921, -0.13701141, -0.005, 0.17786041, 0.23268878, -0.005, -0.19450921, 0.16497377, 2.0184133, -0.13622622, -0.069296375, 2.0184133, -0.13622622, -0.13701141, -0.005, -0.19450921)
+
+[node name="PSX BUILDING SET 1" unique_id=1743246340 instance=ExtResource("1_xiep8")]
+
+[node name="pCube3" parent="." index="0" unique_id=1693994260]
+transform = Transform3D(1.7524887, 0, 0, 0, 1.6906912, 0, 0, 0, 2.1883132, 0, 0.0052368133, 0.0042102337)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pCube3" index="0" unique_id=974824806]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pCube3/StaticBody3D" index="0" unique_id=2113955264]
+shape = SubResource("ConvexPolygonShape3D_xiep8")

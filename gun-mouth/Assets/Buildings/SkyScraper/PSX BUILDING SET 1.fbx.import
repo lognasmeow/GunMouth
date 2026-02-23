@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://xw47mic0eav7"
-path="res://.godot/imported/PSX BUILDING SET 1.fbx-a0c135816eab3bcd13358b052de04145.scn"
+uid="uid://ba36ep7hbo7cr"
+path="res://.godot/imported/PSX BUILDING SET 1.fbx-496cb074437f8d56f82e3d3b61a846e2.scn"
 
 [deps]
 
-source_file="res://Assets/Buildings/PsxBuildingSet/PSX BUILDING SET 1.fbx"
-dest_files=["res://.godot/imported/PSX BUILDING SET 1.fbx-a0c135816eab3bcd13358b052de04145.scn"]
+source_file="res://Assets/Buildings/SkyScraper/PSX BUILDING SET 1.fbx"
+dest_files=["res://.godot/imported/PSX BUILDING SET 1.fbx-496cb074437f8d56f82e3d3b61a846e2.scn"]
 
 [params]
 
@@ -39,6 +39,9 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "nodes": {
+"PATH:AnimationPlayer": {
+"import/skip_import": true
+},
 "PATH:pCube1": {
 "import/skip_import": true
 },
@@ -78,13 +81,13 @@ _subresources={
 "PATH:pCube21": {
 "import/skip_import": true
 },
-"PATH:pCube3": {
-"import/skip_import": true
-},
 "PATH:pCube4": {
 "import/skip_import": true
 },
 "PATH:pCube5": {
+"import/skip_import": true
+},
+"PATH:pCube6": {
 "import/skip_import": true
 },
 "PATH:pCube7": {
