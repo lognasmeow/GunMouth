@@ -13,7 +13,7 @@
 size = Vector2(100, 100)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omire"]
-albedo_color = Color(0.81960785, 0.7294118, 0.65882355, 1)
+albedo_color = Color(0.5058824, 0.46666667, 0.4627451, 1)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_36tjq"]
 points = PackedVector3Array(-50, 0, -50, -50, 0, 50, 50, 0, -50, 50, 0, 50)
@@ -71,5 +71,3 @@ transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06
 
 [node name="Apartment7" parent="Assets/Buildings" index="11" unique_id=908372980 instance=ExtResource("5_0cgbi")]
 transform = Transform3D(-100, 0, 8.742278e-06, 0, 100, 0, -8.742278e-06, 0, -100, 21.966372, 2.3841858e-07, 4.0726385)
-
-[node name="Roads" type="Node3D" parent="." index="5" unique_id=1024994739]
