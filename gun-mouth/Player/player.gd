@@ -4,7 +4,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
-@export var mouseSensitivity := 0.5
+@export var mouseSensitivity := 1.0
 var rotation_x := 0.0
 var rotation_y := 0.0
 
