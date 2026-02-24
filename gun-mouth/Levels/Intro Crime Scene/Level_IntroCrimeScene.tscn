@@ -4,13 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://cgyhgbq1ms2x1" path="res://Player/Player.tscn" id="2_36tjq"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_omire"]
-size = Vector2(20, 20)
+size = Vector2(100, 100)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omire"]
 albedo_color = Color(0.81960785, 0.7294118, 0.65882355, 1)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_l8e3p"]
-points = PackedVector3Array(-10, 0, -10, -10, 0, 10, 10, 0, -10, 10, 0, 10)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_36tjq"]
+points = PackedVector3Array(-50, 0, -50, -50, 0, 50, 50, 0, -50, 50, 0, 50)
 
 [node name="DefaultLevel" unique_id=2041077972 instance=ExtResource("1_omire")]
 
@@ -18,10 +18,12 @@ points = PackedVector3Array(-10, 0, -10, -10, 0, 10, 10, 0, -10, 10, 0, 10)
 mesh = SubResource("PlaneMesh_omire")
 surface_material_override/0 = SubResource("StandardMaterial3D_omire")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Ground" index="0" unique_id=1093534810]
+[node name="StaticBody3D" type="StaticBody3D" parent="Ground" index="0" unique_id=1304370669]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" index="0" unique_id=1208174973]
-shape = SubResource("ConvexPolygonShape3D_l8e3p")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D" index="0" unique_id=1808635392]
+shape = SubResource("ConvexPolygonShape3D_36tjq")
 
 [node name="Player" parent="." index="3" unique_id=1950149838 instance=ExtResource("2_36tjq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5736433, 2.0293748)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5736433, 31.720043)
+
+[node name="Assets" type="Node3D" parent="." index="4" unique_id=509098569]

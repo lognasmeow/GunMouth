@@ -5,9 +5,10 @@
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xst6u"]
 points = PackedVector3Array(0.92609566, -0.005, -0.19450924, 0.92609566, -0.005, 0.35780194, 0.92609566, 1.8133383, -0.19450924, 2.0403614, -0.005, -0.19450924, 2.0403614, -0.005, 0.35780194, 0.92609566, 1.8133383, 0.35780194, 2.0403614, 1.8133383, -0.19450924, 2.0403614, 1.8133383, 0.35780194)
 
-[node name="PSX BUILDING SET 1" unique_id=855206604 instance=ExtResource("1_oxb6a")]
+[node name="MediumBuilding" unique_id=855206604 instance=ExtResource("1_oxb6a")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
-[node name="pCube6" parent="." index="0" unique_id=1350583452]
+[node name="pCube6" parent="." index="0" unique_id=115979469]
 transform = Transform3D(1.7524887, 0, 0, 0, 1.6906912, 0, 0, 0, 2.1883132, -2.5993595, 0.0052368133, 0.11857891)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="pCube6" index="0" unique_id=1118079571]
