@@ -1,30 +1,10 @@
 [gd_scene format=3 uid="uid://cro8mn2bf5kum"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hd58d"]
-sky_top_color = Color(0.16470589, 0.20392157, 0.25882354, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-
-[sub_resource type="Sky" id="Sky_uquse"]
-sky_material = SubResource("ProceduralSkyMaterial_hd58d")
-
-[sub_resource type="Environment" id="Environment_sw41n"]
-background_mode = 2
-sky = SubResource("Sky_uquse")
-tonemap_mode = 2
-ssao_enabled = true
-ssao_radius = 9.76
-ssao_intensity = 3.38
-glow_enabled = true
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.01
-adjustment_enabled = true
-adjustment_brightness = 0.9
-adjustment_saturation = 0.75
+[ext_resource type="PackedScene" uid="uid://buxea1iae32ja" path="res://Environments/Environment_Noir.tscn" id="1_uquse"]
 
 [node name="DefaultLevel" type="Node3D" unique_id=2041077972]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=284596552]
-environment = SubResource("Environment_sw41n")
+[node name="WorldEnvironment" parent="." unique_id=1394891586 instance=ExtResource("1_uquse")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1888510205]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
