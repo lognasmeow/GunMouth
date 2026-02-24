@@ -2,6 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://cro8mn2bf5kum" path="res://Levels/General/Default Level/DefaultLevel.tscn" id="1_omire"]
 [ext_resource type="PackedScene" uid="uid://cgyhgbq1ms2x1" path="res://Player/Player.tscn" id="2_36tjq"]
+[ext_resource type="PackedScene" uid="uid://bcm556pomppyk" path="res://Assets/Buildings/BigBuilding/BigBuilding.tscn" id="3_l8e3p"]
+[ext_resource type="PackedScene" uid="uid://0mqnn1kvxg2a" path="res://Assets/Buildings/MediumBuilding/MediumBuilding.tscn" id="4_0cgbi"]
+[ext_resource type="PackedScene" uid="uid://cp4cc1sok4pfs" path="res://Assets/Buildings/ApartmentBuilding/Apartment2.tscn" id="5_0cgbi"]
+[ext_resource type="PackedScene" uid="uid://dde1dq7mppiac" path="res://Assets/Buildings/SkyScraper/SkyScraper.tscn" id="6_7o2g1"]
+[ext_resource type="PackedScene" uid="uid://bmwshrwmbcsye" path="res://Assets/Buildings/ApartmentBuilding/Apartment3.tscn" id="7_f3ulj"]
+[ext_resource type="PackedScene" uid="uid://bu5p566xbsfn3" path="res://Assets/Buildings/ApartmentBuilding/Apartment.tscn" id="8_3uptx"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_omire"]
 size = Vector2(100, 100)
@@ -24,6 +30,46 @@ surface_material_override/0 = SubResource("StandardMaterial3D_omire")
 shape = SubResource("ConvexPolygonShape3D_36tjq")
 
 [node name="Player" parent="." index="3" unique_id=1950149838 instance=ExtResource("2_36tjq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5736433, 31.720043)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5082169, 1.5736433, 26.621962)
 
 [node name="Assets" type="Node3D" parent="." index="4" unique_id=509098569]
+
+[node name="Buildings" type="Node3D" parent="Assets" index="0" unique_id=1101157699]
+
+[node name="BigBuilding" parent="Assets/Buildings" index="0" unique_id=585539342 instance=ExtResource("3_l8e3p")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -12.17059, 0, 22.02078)
+
+[node name="MediumBuilding" parent="Assets/Buildings" index="1" unique_id=855206604 instance=ExtResource("4_0cgbi")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 19.663393, 0, 25.341156)
+
+[node name="Apartment" parent="Assets/Buildings" index="2" unique_id=1015056731 instance=ExtResource("5_0cgbi")]
+transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06, 12.49622, 0, 18.492266)
+
+[node name="ThinBuilding" parent="Assets/Buildings" index="3" unique_id=1743246340 instance=ExtResource("6_7o2g1")]
+transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 13.248566, 0, 7.6794834)
+
+[node name="Apartment2" parent="Assets/Buildings" index="4" unique_id=1592098319 instance=ExtResource("7_f3ulj")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -5.0485506, -2.5430984, 8.289687)
+
+[node name="BigBuilding2" parent="Assets/Buildings" index="5" unique_id=156075662 instance=ExtResource("3_l8e3p")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 3.9726684, 0, -10.753878)
+
+[node name="Apartment3" parent="Assets/Buildings" index="6" unique_id=328432890 instance=ExtResource("7_f3ulj")]
+transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06, -12.842165, 0, -1.9243423)
+
+[node name="ThinBuilding2" parent="Assets/Buildings" index="7" unique_id=1607788017 instance=ExtResource("6_7o2g1")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 34.79875, 0, 12.705017)
+
+[node name="Apartment4" parent="Assets/Buildings" index="8" unique_id=1105024458 instance=ExtResource("8_3uptx")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 20.58087, 0, -10.892657)
+
+[node name="Apartment5" parent="Assets/Buildings" index="9" unique_id=1982528339 instance=ExtResource("8_3uptx")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 29.759184, 0, -10.892657)
+
+[node name="Apartment6" parent="Assets/Buildings" index="10" unique_id=776436744 instance=ExtResource("5_0cgbi")]
+transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06, 28.78625, 0, -1.0647335)
+
+[node name="Apartment7" parent="Assets/Buildings" index="11" unique_id=908372980 instance=ExtResource("5_0cgbi")]
+transform = Transform3D(-100, 0, 8.742278e-06, 0, 100, 0, -8.742278e-06, 0, -100, 21.966372, 2.3841858e-07, 4.0726385)
+
+[node name="Roads" type="Node3D" parent="." index="5" unique_id=1024994739]
