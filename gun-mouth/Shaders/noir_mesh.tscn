@@ -8,8 +8,8 @@ shader = ExtResource("1_ubbls")
 shader_parameter/saturation = 0.2
 shader_parameter/contrast = 1.5
 shader_parameter/brightness = 0.125
-shader_parameter/grain_scale = 250.0
-shader_parameter/grain_density = 0.5
+shader_parameter/grain_scale = 500.0
+shader_parameter/grain_density = 0.1670000079325
 
 [sub_resource type="QuadMesh" id="QuadMesh_uquse"]
 material = SubResource("ShaderMaterial_44tmr")

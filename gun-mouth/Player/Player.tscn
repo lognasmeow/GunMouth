@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cgyhgbq1ms2x1"]
 
 [ext_resource type="Script" uid="uid://dk0u1os4a3d8m" path="res://Player/player.gd" id="1_3qydi"]
+[ext_resource type="PackedScene" uid="uid://b7tg2lsk1dj3l" path="res://Shaders/noir_mesh.tscn" id="2_q3lat"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_l2ndj"]
 
@@ -18,3 +19,6 @@ shape = SubResource("CapsuleShape3D_l2ndj")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=70021841]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.408809, 0)
+
+[node name="NoirMesh" parent="Camera3D" unique_id=1298235630 instance=ExtResource("2_q3lat")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
