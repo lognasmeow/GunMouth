@@ -11,7 +11,6 @@ sky_material = SubResource("ProceduralSkyMaterial_hd58d")
 background_mode = 2
 sky = SubResource("Sky_uquse")
 tonemap_mode = 2
-ssao_enabled = true
 ssao_radius = 9.76
 ssao_intensity = 3.38
 glow_enabled = true
