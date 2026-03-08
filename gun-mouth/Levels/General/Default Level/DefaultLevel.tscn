@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cro8mn2bf5kum"]
 
 [ext_resource type="PackedScene" uid="uid://buxea1iae32ja" path="res://Environments/Environment_Noir.tscn" id="1_uquse"]
-[ext_resource type="PackedScene" uid="uid://b7tg2lsk1dj3l" path="res://Shaders/noir_mesh.tscn" id="2_sw41n"]
 
 [node name="DefaultLevel" type="Node3D" unique_id=2041077972]
 
@@ -10,5 +9,3 @@
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1888510205]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
-
-[node name="NoirMesh" parent="." unique_id=1298235630 instance=ExtResource("2_sw41n")]

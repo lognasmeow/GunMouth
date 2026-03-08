@@ -15,6 +15,7 @@ ssao_radius = 9.76
 ssao_intensity = 3.38
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.01
+adjustment_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" unique_id=1394891586]
 environment = SubResource("Environment_sw41n")
