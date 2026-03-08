@@ -6,8 +6,8 @@
 render_priority = 0
 shader = ExtResource("1_ubbls")
 shader_parameter/saturation = 0.2
-shader_parameter/contrast = 1.645
-shader_parameter/brightness = 0.31
+shader_parameter/contrast = 1.545
+shader_parameter/brightness = 0.265
 shader_parameter/grain_scale = 500.0
 shader_parameter/grain_density = 0.1670000079325
 
