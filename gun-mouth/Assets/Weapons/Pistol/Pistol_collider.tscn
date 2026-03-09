@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://biqjul23wcm5w"]
+
+[ext_resource type="PackedScene" uid="uid://gyv7w2wgy0hm" path="res://Assets/Weapons/BaseWeaponCollider.tscn" id="1_43mqw"]
+[ext_resource type="PackedScene" uid="uid://b2ixfpjst8l50" path="res://Assets/Weapons/Pistol/Pistol.tscn" id="2_e4n1h"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_e4n1h"]
+radius = 0.25
+height = 0.5
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e4n1h"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="Pistol_collider" unique_id=833437808 instance=ExtResource("1_43mqw")]
+referenceWeapon = ExtResource("2_e4n1h")
+ammoToPickup = 8
+
+[node name="MeshInstance3D" parent="." index="0" unique_id=1437764474]
+mesh = SubResource("SphereMesh_e4n1h")
+
+[node name="CollisionShape3D" parent="Area3D" parent_id_path=PackedInt32Array(474920860) index="0" unique_id=1540585534]
+shape = SubResource("BoxShape3D_e4n1h")

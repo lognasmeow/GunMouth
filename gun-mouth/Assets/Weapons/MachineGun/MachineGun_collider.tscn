@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cnsghl76mlk65"]
+
+[ext_resource type="PackedScene" uid="uid://gyv7w2wgy0hm" path="res://Assets/Weapons/BaseWeaponCollider.tscn" id="1_j6r0b"]
+[ext_resource type="PackedScene" uid="uid://sydkm5h0n8wx" path="res://Assets/Weapons/MachineGun/MachineGun.tscn" id="2_vcvff"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vcvff"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vcvff"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="MachineGun_collider" unique_id=833437808 instance=ExtResource("1_j6r0b")]
+referenceWeapon = ExtResource("2_vcvff")
+ammoToPickup = 16
+
+[node name="MeshInstance3D" parent="." index="0" unique_id=1437764474]
+mesh = SubResource("BoxMesh_vcvff")
+
+[node name="CollisionShape3D" parent="Area3D" parent_id_path=PackedInt32Array(474920860) index="0" unique_id=1540585534]
+shape = SubResource("BoxShape3D_vcvff")

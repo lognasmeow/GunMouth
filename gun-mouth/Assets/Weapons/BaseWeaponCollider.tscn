@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://gyv7w2wgy0hm"]
+
+[ext_resource type="Script" uid="uid://biby86rwdyjuo" path="res://Assets/Weapons/base_weapon_collider.gd" id="1_xgle5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xgle5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a17yr"]
+
+[node name="BaseWeaponCollider" type="Node3D" unique_id=833437808]
+script = ExtResource("1_xgle5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1437764474]
+mesh = SubResource("BoxMesh_xgle5")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=474920860]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1540585534]
+shape = SubResource("BoxShape3D_a17yr")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

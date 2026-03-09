@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://sydkm5h0n8wx"]
+
+[ext_resource type="PackedScene" uid="uid://b0o1jj1hy1psj" path="res://Assets/Weapons/BaseWeapon.tscn" id="1_2rn0k"]
+
+[node name="MachineGun" unique_id=1788778256 instance=ExtResource("1_2rn0k")]
+isAutomatic = true
+fireInterval = 0.1
+maxAmmo = 120

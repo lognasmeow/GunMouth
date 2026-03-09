@@ -52,3 +52,7 @@ func _unhandled_input(event):
 		
 		rotation_degrees.y = rotation_y
 		rotation_degrees.x = rotation_x
+		
+func _on_weapon_picked_up(referenceWeapon: PackedScene, ammoToPickup: int):
+	print(referenceWeapon)
+	print(ammoToPickup)

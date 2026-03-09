@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b3llcdwickolx"]
+
+[ext_resource type="PackedScene" uid="uid://gyv7w2wgy0hm" path="res://Assets/Weapons/BaseWeaponCollider.tscn" id="1_pegg7"]
+[ext_resource type="PackedScene" uid="uid://bm0rbxfb1vugf" path="res://Assets/Weapons/Shotgun/Shotgun.tscn" id="2_js43g"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_js43g"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_js43g"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="Shotgun_collider" unique_id=833437808 instance=ExtResource("1_pegg7")]
+referenceWeapon = ExtResource("2_js43g")
+ammoToPickup = 4
+
+[node name="MeshInstance3D" parent="." index="0" unique_id=1437764474]
+mesh = SubResource("PrismMesh_js43g")
+
+[node name="CollisionShape3D" parent="Area3D" parent_id_path=PackedInt32Array(474920860) index="0" unique_id=1540585534]
+shape = SubResource("BoxShape3D_js43g")

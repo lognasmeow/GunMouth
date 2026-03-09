@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bm0rbxfb1vugf"]
+
+[ext_resource type="PackedScene" uid="uid://b0o1jj1hy1psj" path="res://Assets/Weapons/BaseWeapon.tscn" id="1_jid7e"]
+
+[node name="Shotgun" unique_id=1788778256 instance=ExtResource("1_jid7e")]
+fireInterval = 1.0
+maxAmmo = 30

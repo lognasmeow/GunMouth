@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://dde1dq7mppiac" path="res://Assets/Buildings/SkyScraper/SkyScraper.tscn" id="6_7o2g1"]
 [ext_resource type="PackedScene" uid="uid://bmwshrwmbcsye" path="res://Assets/Buildings/ApartmentBuilding/Apartment3.tscn" id="7_f3ulj"]
 [ext_resource type="PackedScene" uid="uid://bu5p566xbsfn3" path="res://Assets/Buildings/ApartmentBuilding/Apartment.tscn" id="8_3uptx"]
+[ext_resource type="PackedScene" uid="uid://b3llcdwickolx" path="res://Assets/Weapons/Shotgun/Shotgun_collider.tscn" id="9_4yivw"]
+[ext_resource type="PackedScene" uid="uid://cnsghl76mlk65" path="res://Assets/Weapons/MachineGun/MachineGun_collider.tscn" id="9_6uluj"]
+[ext_resource type="PackedScene" uid="uid://biqjul23wcm5w" path="res://Assets/Weapons/Pistol/Pistol_collider.tscn" id="10_qsh14"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_omire"]
 size = Vector2(100, 100)
@@ -30,7 +33,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_omire")
 shape = SubResource("ConvexPolygonShape3D_36tjq")
 
 [node name="Player" parent="." index="3" unique_id=1950149838 instance=ExtResource("2_36tjq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5082169, 1.5736433, 26.621962)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5082169, 1.5736433, 42.176727)
 
 [node name="Assets" type="Node3D" parent="." index="4" unique_id=509098569]
 
@@ -71,3 +74,12 @@ transform = Transform3D(-4.371139e-06, 0, -100, 0, 100, 0, 100, 0, -4.371139e-06
 
 [node name="Apartment7" parent="Assets/Buildings" index="11" unique_id=908372980 instance=ExtResource("5_0cgbi")]
 transform = Transform3D(-100, 0, 8.742278e-06, 0, 100, 0, -8.742278e-06, 0, -100, 21.966372, 2.3841858e-07, 4.0726385)
+
+[node name="Pistol_collider" parent="." index="5" unique_id=1351909701 instance=ExtResource("10_qsh14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6212771, 34.49678)
+
+[node name="MachineGun_collider" parent="." index="6" unique_id=1074756900 instance=ExtResource("9_6uluj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1124516, 0.6475518, 34.476006)
+
+[node name="Shotgun_collider" parent="." index="7" unique_id=833437808 instance=ExtResource("9_4yivw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.371788, 0.6744418, 34.52696)
