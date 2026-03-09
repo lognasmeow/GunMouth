@@ -5,6 +5,8 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const SPRINT_MULTIPLIER = 2
 
+@onready var weaponManager: Node3D = $WeaponManager
+
 @export var mouseSensitivity := 1.0
 var rotation_x := 0.0
 var rotation_y := 0.0
@@ -54,5 +56,14 @@ func _unhandled_input(event):
 		rotation_degrees.x = rotation_x
 		
 func _on_weapon_picked_up(referenceWeapon: PackedScene, ammoToPickup: int):
-	print(referenceWeapon)
-	print(ammoToPickup)
+	var instantiatedWeapon = referenceWeapon.instantiate()
+	
+	for child in weaponManager.get_children():
+		if child.name == instantiatedWeapon.name:
+			child.ammo += ammoToPickup
+			if child.ammo > child.maxAmmo:
+				child.ammo = child.maxAmmo
+			return
+	
+	instantiatedWeapon.ammo += ammoToPickup
+	weaponManager.add_child(instantiatedWeapon)
