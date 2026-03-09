@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dk0u1os4a3d8m" path="res://Player/player.gd" id="1_3qydi"]
 [ext_resource type="PackedScene" uid="uid://b7tg2lsk1dj3l" path="res://Shaders/noir_mesh.tscn" id="2_q3lat"]
+[ext_resource type="PackedScene" uid="uid://jhqtv7juakcs" path="res://Managers/WeaponManager/WeaponManager.tscn" id="3_tok1r"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_l2ndj"]
 
@@ -22,3 +23,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.408809, 0)
 
 [node name="NoirMesh" parent="Camera3D" unique_id=1298235630 instance=ExtResource("2_q3lat")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="WeaponManager" parent="." unique_id=595507186 instance=ExtResource("3_tok1r")]

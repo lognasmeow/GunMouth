@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://jhqtv7juakcs"]
+
+[ext_resource type="Script" uid="uid://t3075ymafsvg" path="res://Managers/WeaponManager/weapon_manager.gd" id="1_jmxda"]
+
+[node name="WeaponManager" type="Node3D" unique_id=595507186]
+script = ExtResource("1_jmxda")
